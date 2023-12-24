@@ -434,22 +434,25 @@
           </ul>
         </div>
 
-        <form class="form-subscribe">
-          <label class="labe-subscribe">Subscribe</label>
-          <div class="wrapper-subscribe">
-            <input
-              class="form-input-subscribe"
-              type="email"
-              name="Subscribe"
-              placeholder="E-mail" />
+        <div class="footer-subscribe">
+          <p class="text-subscribe">Subscribe</p>
+          <form class="form-subscribe">
+            <label class="label-subscribe"
+              ><input
+                class="form-input-subscribe"
+                type="email"
+                name="Subscribe"
+                placeholder="E-mail"
+            /></label>
+
             <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="form-subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -500,29 +503,32 @@
             </div>
           </div>
 
-          <div class="form-wrapper">
-            <label class="form-label" for="user-message">Comment </label>
+          <div class="form-wrapper textarea">
+            <label class="form-label" for="user-comment">Comment </label>
             <textarea
               class="form-textarea"
-              name="user-message"
-              id="user-message"
+              name="user-comment"
+              id="user-comment"
               rows="6"
               placeholder="Text input"></textarea>
           </div>
-          <label class="form-agreement">
+          <div class="form-checkbox">
             <input
               class="checkbox visually-hidden"
               type="checkbox"
-              name="user-agreement"
-              value="false" />
-            <span class="form-agreement-checkbox">
-              <svg class="form-agreement-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-Vector"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="form-agreement-link" href="">Privacy Policy</a>
-          </label>
+              name="user-privacy"
+              id="user-privacy"
+              value="true" />
+            <label class="form-agreement" for="user-privacy">
+              <span class="form-agreement-checkbox">
+                <svg class="form-agreement-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="form-agreement-link" href="">Privacy Policy</a>
+            </label>
+          </div>
           <button class="modal-btn-send" type="submit">Send</button>
         </form>
       </div>
